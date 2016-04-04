@@ -1,0 +1,13 @@
+<h1><%= @search_input %></h1>
+
+<p><% @albums.each do |y| %></p>
+   <p><%= y %></p>
+<% end %>
+
+<p><% @song.each do |x| %></p>
+
+<p><%= link_to x["trackName"], x["trackViewUrl"] %></p>
+<p><%= x["collectionName"] %></p>
+<%= image_tag x["artworkUrl60"] %>
+
+<% end %>
