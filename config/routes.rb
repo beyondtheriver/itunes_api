@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   # root 'search_page#index'
   resources :search_page
   get '/results' => 'search_page#results'
+
+  get 'home/moviePage' => 'home#moviePage'
+  get 'home/ebookPage' => 'home#ebookPage'
+  get 'home/tvEpisodePage' => 'home#tvEpisodePage'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

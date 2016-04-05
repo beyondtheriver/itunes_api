@@ -1,0 +1,5 @@
+<h1>Harry Potter Books</h1>
+<% @ebook.each do |ebook| %>
+   "<%= ebook["trackName"] %>" By:
+   <%= ebook["artistName"] %><br/>
+<% end %>
